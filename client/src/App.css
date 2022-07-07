@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+  --color-yellow: #f9c74f;
+  --color-purple: #9d4edd;
+}
+
+* > *{
+font-family: 'Poppins', sans-serif;
+margin: 0;
+padding: 0;
+
+}
+
+html {
+  min-height: 100%;
+  background-image:url('./img/abstract-pastel-blue-paint-brushstroke-textured-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.heading{
+  /* color: rgb(68, 85, 85); */
+  font-weight: bold;
+  background-color: #488FB1;
+}
+
+.App {
+  text-align: center;
+  /* padding: 4em 0; */
+}
+
+.bg-yellow{
+  background-color: var(--color-yellow);
+}
+
+.bg-purple{
+  background-color: var(--color-purple);
+}
+
+.chart .title{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form {
+  /* border: 1px solid blue; */
+  padding: 5%;
+  border-radius: 15px;
+  transition: 0.2s;
+  color: darkcyan;
+  background-color: whitesmoke;
+}
+
+.form:hover {
+  box-shadow: 0px 0px 10px 1px rgb(138, 135, 135);
+}
+
+.form input:focus {
+  box-shadow: 0 0 5px 2px lightblue;
+  outline: none;
+  border: none;
+}
+.form button:hover {
+  background-color: rgb(10, 89, 141);
+}
+
+.title{
+  color:#533E85;
+}
+
+.form-input{
+  @apply mt-1 block w-full py-2 px-3 border border-gray-200 bg-white rounded-md focus:outline-none focus:ring-indigo-500 sm:text-sm;
+}
+
